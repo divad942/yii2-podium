@@ -57,7 +57,7 @@ class AccountController extends BaseController
         return [
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
-                //'testLimit' => 1
+                'testLimit' => 1,
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
